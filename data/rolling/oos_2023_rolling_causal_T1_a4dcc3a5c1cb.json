@@ -1,0 +1,102 @@
+{
+  "signature": "a4dcc3a5c1cb9ac5b8ee13d848a8890338267fdb1b8262001764ac19de82c3fb",
+  "signature_payload": {
+    "pipeline_version": "rolling-causal-t1-r1-2026-08-05",
+    "protocol": "rolling_expanding_refit_168h_one_step_observed_state_update",
+    "target_index_semantics": "tau=t+1",
+    "information_set": "X_tau_minus_1,Q_through_tau_minus_1",
+    "data_start": "2022-01-01 00:00:00",
+    "rolling_start": "2023-01-01 00:00:00",
+    "rolling_end": "2023-12-31 23:00:00",
+    "block_hours": 168,
+    "sarimax_order": [
+      1,
+      0,
+      0
+    ],
+    "sarimax_seasonal_order": [
+      1,
+      1,
+      1,
+      24
+    ],
+    "exog_columns": [
+      "Precipitação",
+      "Temperatura Instantanea",
+      "Temperatura Média",
+      "Umidade Instantanea",
+      "Umidade Media",
+      "Sensação Termica (°F)",
+      "hora_sin",
+      "hora_cos",
+      "Dia da Semana_quarta-feira",
+      "Dia da Semana_quinta-feira",
+      "Dia da Semana_segunda-feira",
+      "Dia da Semana_sexta-feira",
+      "Dia da Semana_sábado",
+      "Dia da Semana_terça-feira",
+      "Classe do dia_Feriado",
+      "Classe Semanal_Meio de semana",
+      "interacao_classe_periodo_Dia comum_Manha",
+      "interacao_classe_periodo_Dia comum_Noite",
+      "interacao_classe_periodo_Dia comum_Tarde",
+      "interacao_classe_periodo_Feriado_Madrugada",
+      "interacao_classe_periodo_Feriado_Manha",
+      "interacao_classe_periodo_Feriado_Noite",
+      "interacao_classe_periodo_Feriado_Tarde",
+      "tempo_sem_chuva",
+      "precip_lag_1h",
+      "precip_lag_2h",
+      "precip_acum_20d",
+      "interacao_chuva_saturacao"
+    ],
+    "data_fingerprint": "3b6d0600ea374c14adf59af558bcf1ab1a366b088c5c5f57e34f9c32590bb8b0",
+    "statsmodels_version": "0.14.4"
+  },
+  "expected_hours": 8760,
+  "completed_blocks": [
+    1,
+    2
+  ],
+  "block_records": [
+    {
+      "block_num": 1,
+      "train_start": "2022-01-01 01:00:00",
+      "train_end": "2022-12-31 23:00:00",
+      "forecast_start": "2023-01-01 00:00:00",
+      "forecast_end": "2023-01-07 23:00:00",
+      "n_train": 8759,
+      "n_forecast": 168,
+      "optimizer_converged": false,
+      "elapsed_seconds": 3642.1725628376007,
+      "saved_at": "2026-08-15T01:44:59.240967"
+    },
+    {
+      "block_num": 2,
+      "train_start": "2022-01-01 01:00:00",
+      "train_end": "2023-01-07 23:00:00",
+      "forecast_start": "2023-01-08 00:00:00",
+      "forecast_end": "2023-01-14 23:00:00",
+      "n_train": 8927,
+      "n_forecast": 168,
+      "optimizer_converged": false,
+      "elapsed_seconds": 3539.4552636146545,
+      "saved_at": "2026-08-15T02:43:59.091750"
+    }
+  ],
+  "created_at": "2026-08-15T00:44:17.045485",
+  "last_completed_end": "2023-01-14 23:00:00",
+  "completed_hours": 336,
+  "updated_at": "2026-08-15T02:43:59.092639",
+  "audit_2023": {
+    "label": "primeiro bloco OOS de 2023",
+    "passed": true,
+    "probe_hours": 72,
+    "positions_tested": [
+      0,
+      12,
+      36
+    ],
+    "max_same_time_difference": 0.0
+  }
+}
