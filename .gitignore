@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+outputs/
+trained_models/
+*.keras
+*.pkl
+*.joblib
+.env
+.env.*
+data/input/*
+!data/input/README.md
+data/rolling/*
+!data/rolling/README.md
