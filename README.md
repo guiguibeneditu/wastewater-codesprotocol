@@ -85,4 +85,3 @@ Additional workflows require inputs that are not supplied:
 
 Author: Guilherme Antônio Oliveira Benedito. ORCID: https://orcid.org/0009-0006-6636-7456
 
-No article DOI or acceptance status is asserted. Citation metadata must be updated when the final manuscript/release identifiers are available. No software reuse license has yet been selected by the author. This package does not grant rights over COPASA data or change the terms of third-party dependencies.
